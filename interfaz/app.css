@@ -1,0 +1,104 @@
+/* Quitar las separaciones por defecto de todas las etiquetas */
+.boton_personalizado{
+  text-decoration: none;
+  padding: 5px;
+  font-weight: 90;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #1883ba;
+  border-radius: 6px;
+  border: 2px solid #0016b0;
+}
+.boton_personalizado:hover{
+  color: #1883ba;
+  background-color: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.contenedor{
+  width: 300px;
+height: 40px;
+font-size: 40px;
+line-height: 40px;
+position:absolute;
+top: 0;
+right: 0;
+left: 0;
+margin: auto;
+overflow: hidden;
+}
+ul{
+  list-style: none;
+  padding-left: 10px;
+animation: cambiar 20s;
+}
+p{
+  margin: 0;
+
+
+}
+@keyframes cambiar {
+0%{margin-top: 0;}
+20%{margin-top: 0;}
+25%{margin-top: -40%;}
+50%{margin-top: -40%;}
+
+55%{margin-top: -80%;}
+80%{margin-top: -80%;}
+85%{margin-top: -40%;}
+95%{margin-top: -40%;}
+100%{margin-top: 0;}
+
+
+}
+body{
+background-image: url(fondo.jpg);
+}
+
+
+/* Estilo para el título */
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* Estilos para los elementos del formulario */
+#formulario {
+  margin-bottom: 1em;
+}
+
+input {
+  border-radius: 3px;
+  border: 1px solid #0c1379;
+  padding: 6px 16px;
+}
+
+button {
+  background: #303ce2;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px 12px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #BFD2B2;
+  color: #0c4f8d
+}
+
+/* Estilos para la app */
+#app {
+  background: #6374cad3;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #7FA085;
+  margin: 2em auto 0 auto;
+  padding: 2em;
+  width: 1000px;
+}
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Contactos</title>
+  <link rel="stylesheet" href="app.css" />
+  
+</head>
+
+<body>
+  <div class = "contenedor">
+
+  </div>
+  <div id="app">
+    <h2 id="titulo">TERMINAL DE TRANSPORTE</h2>
+    <h3>TRAVELERS</h3> 
+    <br>
+        <form action= "/Travelers/agregar" id="form-user" method="POST">
+          <input type="text" placeholder="Nombre" name="nombre" id="nombre"/>
+          <input type="text" placeholder="Apellido" name="Apellido" id="apellido"/>
+          <input type="date" placeholder="fecha_nacimiento" name="fecha_nacimiento" id="fecha_nacimiento"/>
+          <input type="text" placeholder="email" name="email" id="email"/>
+          <input type="string" placeholder="Teléfono" name="telefono" id="telefono" />
+          <input type="string" placeholder="documento" name="documento" id="documento" />
+          <input type="text" placeholder="lugar_destino" name="lugar_destino" id="lugar_destino"/>
+          <input type="text" placeholder="lugar_origen" name="lugar_origen" id="lugar_origen"/>
+
+
+        
+
+          
+          <button type="submit" class="boton_personalizado"   id="boton"> Agregar</button>
+        </form>
+     <br><br>
+     <h3>VEHICULOS</h3>
+        <form action= "/vehiculo/agregar" id= "form-libro" method="POST">
+          <input type="text" placeholder="marca" name="marca" id="marca" />
+          <input type="text" placeholder="tipo" name="tipo" id="tipo"/>
+          <input type="number" placeholder="capacidad_pasajeros" name="capacidad_pasajeros" id="capacidad_pasajeros" />
+          <input type="text" placeholder="hora_entrada" name="hora_entrada" id="hora_entrada" />
+          <input type="text" placeholder="fecha_entrada" name="fecha_entrada" id="fecha_entrada"/>
+          <input type="text" placeholder="hora_salida" name="hora_salida" id="hora_salida" />
+          <input type="text" placeholder="fecha_salida" name="fecha_salida" id="fecha_salida"/>
+
+          <button type="submit" class="boton_personalizado"id="bton">
+            Agregar
+          </button>
+        </form>
+    <br><br>
+    <h3>EMPRESA</h3>
+           <form  action="/empresa/agregar" id="formulario" method="POST">
+             <input type="text" placeholder="Nombre empresa" name="nombre" id="nombre_empresa" />
+             <input type="text" placeholder="Nit" name="nit" id="nit"/>
+             <input type="text" placeholder="Direccion" name="direccion" id="direccion" />
+             <input type="string" placeholder="Teléfono" name="telefono" id="telefono" />
+
+             <button type="submit"  class="boton_personalizado" id="boton">
+              Agregar
+             </button>
+           </form>
+        
+    
+    <div id="contactos">
+      <ul>
+        <script src="../index.js"></script>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+</body>
+</html>
